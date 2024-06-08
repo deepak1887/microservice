@@ -4,7 +4,7 @@ namespace BuldingBlocks.CQRS;
 //Handeling the command, command with response and command without response
 
 
-public interface ICommandHandler<in TCommand> 
+public interface ICommandHandler<in TCommand>
     : IRequestHandler<TCommand, Unit> where TCommand : ICommand<Unit>
 {
 }

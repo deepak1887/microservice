@@ -1,6 +1,4 @@
-﻿using FluentValidation;
-
-namespace Catalog.API.Products.CreateProduct;
+﻿namespace Catalog.API.Products.CreateProduct;
 
 public record CreateProductCommand(string Name, List<string> Category, string Description, string ImageFile, decimal Price)
     : ICommand<CreateProductResult>;
@@ -24,7 +22,8 @@ internal class CreateProductCommandHandler(IDocumentSession session, IValidator<
     {
         var result = await validator.ValidateAsync(command, cancellationToken);
         var errors = result.Errors.Select(s => s.ErrorMessage);
-        if (errors.Any()) { 
+        if (errors.Any())
+        {
             throw new ValidationException(errors.FirstOrDefault());
         }
 
