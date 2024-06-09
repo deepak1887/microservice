@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace BuldingBlocks.CQRS;
+namespace BuildingBlocks.CQRS;
 
 //defining the command types
 //1. Command which can return response

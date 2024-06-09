@@ -1,8 +1,8 @@
 ﻿global using Basket.API.Data;
 global using Basket.API.Models;
-global using BuldingBlocks.Behaviours;
-global using BuldingBlocks.CQRS;
-global using BuldingBlocks.Exceptions;
+global using BuildingBlocks.Behaviours;
+global using BuildingBlocks.CQRS;
+global using BuildingBlocks.Exceptions;
 global using Carter;
 global using FluentValidation;
 global using Mapster;

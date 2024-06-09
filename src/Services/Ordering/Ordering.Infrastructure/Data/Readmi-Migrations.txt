@@ -1,0 +1,7 @@
+﻿1. To Add Migration
+Add-Migration "Name Migration" -OutputDir 'Location(Data/Migrations)' -Project "Where to target project(Ordering.Infrastructure)" "Start up project (Ordering.API)"
+Add-Migration InitialCreate -OutputDir Data/Migrations -Project Ordering.Infrastructure Ordering.API
+
+startup project should have "Microsoft.EntityFrameworkCore.Design" package installed.
+
+2. Update-Database -- to update database to db -- run all migration code and then create db

@@ -1,5 +1,5 @@
 
-using BuldingBlocks.Exceptions.Handler;
+using BuildingBlocks.Exceptions.Handler;
 using Discount.Grpc;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -34,7 +34,8 @@ builder.Services.AddStackExchangeRedisCache(options =>
 
 
 //Add grpc service
-builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(options => {
+builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(options =>
+{
     options.Address = new Uri(builder.Configuration["GrpcSettings:DiscountUrl"]!);
 }).ConfigurePrimaryHttpMessageHandler(() =>
 {

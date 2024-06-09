@@ -1,4 +1,4 @@
-﻿global using BuldingBlocks.CQRS;
+﻿global using BuildingBlocks.CQRS;
 global using Carter;
 global using Catalog.API.Data;
 global using Catalog.API.Models;

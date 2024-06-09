@@ -1,5 +1,5 @@
-using BuldingBlocks.Behaviours;
-using BuldingBlocks.Exceptions.Handler;
+using BuildingBlocks.Behaviours;
+using BuildingBlocks.Exceptions.Handler;
 using HealthChecks.UI.Client;
 
 

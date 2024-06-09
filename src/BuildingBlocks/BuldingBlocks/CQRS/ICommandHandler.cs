@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace BuldingBlocks.CQRS;
+namespace BuildingBlocks.CQRS;
 //Handeling the command, command with response and command without response
 
 
